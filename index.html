@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.</p>
+        
+        <form id="bmiForm">
+            <div class="input-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender">
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="age">Umur (tahun):</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="input-group">
+                <label for="height">Tinggi (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Berat (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <button type="button" onclick="calculateBMI()">Hitung BMI</button>
+        </form>
+
+        <div id="result">
+            <h2>Hasil BMI:</h2>
+            <p id="bmiValue"></p>
+            <p id="bmiExplanation"></p>
+            <p id="ageInfo"></p>
+        </div>
+
+        <p><strong>Penjelasan BMI:</strong> Indeks Massa Tubuh (BMI) adalah ukuran yang digunakan untuk menentukan apakah seseorang memiliki berat badan yang sehat untuk tinggi badannya. Ini digunakan untuk memperkirakan risiko masalah kesehatan yang terkait dengan berat badan berlebih atau kurang.</p>
+        
+        <!-- Pemberitahuan atau Catatan tentang BMI -->
+        <p class="note"><strong>Catatan:</strong> Meskipun BMI merupakan alat yang berguna, namun tidak memperhitungkan massa otot, distribusi lemak, atau faktor lain yang juga penting untuk kesehatan. BMI hanyalah satu dari sekian banyak alat untuk menilai status kesehatan seseorang.</p>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- Kebanyakan Codingan yang ada di css, js, dan html telah dibantu oleh 2 guru dan ChatGPT -->
+</body>
+
+</html>
